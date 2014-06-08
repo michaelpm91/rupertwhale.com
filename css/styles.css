@@ -1,0 +1,162 @@
+body{
+	background-color:#1E1E1E;
+	color:#efefef;
+	font: 13px 'Lucida Grande',Helvetica,Arial,sans-serif;
+}
+.project a, .project h3{
+	color:#efefef;
+	text-decoration:none;
+}
+#header{
+	position:relative;
+	height:60px;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#header ul{
+	position:absolute;
+	left:600px;
+	top:10px;
+}
+#header ul li{
+	display:inline-block;
+	padding: 0 15px;
+}
+#header ul li a{
+	color:#888;
+	text-decoration:none;
+}
+#header ul li a.current{
+	color:#ddd;
+}
+#header ul li a:hover{
+	color:#ddd;
+}
+.title{
+	color: #888;
+	font-size:10px;
+	
+}
+#about{
+	line-height:20px;
+}
+h1{
+	font-size:26px !important;
+	margin: 0 0 20px 0 !important;
+	font-weight:normal;
+	letter-spacing: -0.05em;
+}
+.project h3{
+	font-size: 15px;
+	text-align:center;
+	letter-spacing: -0.01em;
+	font-weight: normal;
+}
+.imageContainer {
+    border: 1px solid #444;
+    overflow: hidden;
+    width: 248px;
+    height: 148px;
+    margin: 15px;
+    text-align: center;
+}
+.imageContainer > span {
+    display: block;
+    width: 1000px;
+    margin-left: -150px; /* -(width-container width)/2 */
+}
+.imageContainer > span > img {
+    display: inline-block;
+}
+#login{
+	width:25%;
+	height:500px;
+	background-color:white;
+	border-radius:3px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:120px;
+
+
+}
+.project{
+	display:inline-block;
+	width:31%;
+	margin-left:1%;
+	margin-right:1%;
+	margin-bottom:20px;
+}
+.project img{
+	width:100%;
+}
+#content{
+	position:relative;
+	margin-bottom:50px;
+}
+.preview{
+	background-repeat:no-repeat !important;
+	background-position:center !important;
+	background-color:rgba(0,0,0,0.7) !important;
+	background-image: url("/img/ajax-loader.gif") !important;
+}
+
+.progressText{
+	position:absolute;
+	color:green;
+	font-size:25px;
+	color:white;
+	text-align:center;
+	width:100%;
+	bottom:22px;
+}
+.removeFile{
+	display:none;
+	background-image: url("/img/close-icon.png");
+	background-size:32px 32px;
+	width:32px;
+	height:32px;
+	position:absolute;
+	right:0;
+	cursor: pointer; 
+}
+.descriptionText{
+	display:none;
+    width: 100%;
+    min-height: 25px;
+    position: absolute;
+    background-color: grey;
+    opacity: 0.7;
+    bottom: 50px;
+	font-size:14px;
+}
+.descriptionText span{
+	color: white;
+}
+.descriptionText input{
+	color: black;
+	width:100%;
+}
+@media (max-width: 799px){
+	#content{
+		width:100%;
+		min-wdith:400px;
+	}
+}
+@media (min-width: 800px){
+
+	#content{
+		width:800px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	#name, #about{
+		width:60%;
+	}
+	#information{
+		position:absolute;
+		left:550px;
+		top:0;
+	}
+
+}
